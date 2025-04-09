@@ -1,0 +1,179 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #d3d9df;
+  height: 100%;
+  width: 100%;
+}
+.flex-gap {
+  display: flex;
+  gap: 20px; /* or whatever gap you want */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
+  width: 100%;
+}
+
+/* Light theme */
+:root {
+  --bg-color: #d3d9df;
+  --text-color: #000;
+}
+
+/* Dark theme */
+body.dark {
+  --bg-color: #1e1e2f;
+  --text-color: #f0f0f0;
+}
+
+
+body:not(.dark) .mainHeading {
+  color: #0a0909;
+}
+
+
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;  /* Center the title */
+  align-items: center;
+}
+
+
+
+.theme-toggle {
+  position: absolute;
+  right: 20px; /* push it 20px from the left */
+  top: 20px; /* push it 20px from the top */
+  background: white;
+  color: #4facfe;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #dff6ff;
+}
+
+
+
+header h1 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header button {
+  background: white;
+  color: #4facfe;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header button:hover {
+  background: #dff6ff;
+}
+
+.container {
+  margin-top: 120px; /* give space for fixed header */
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center children horizontally */
+  text-align: center;
+  gap: 30px;
+
+}
+
+.search-section, .favorites-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #00c6fb;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #e0f7fa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites-section li {
+  padding: 10px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.favorites-section li:hover {
+  background: #e0f7fa;
+}
+
+
+
+
+
+
+
